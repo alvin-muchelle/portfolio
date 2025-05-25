@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} className="z-50" />
         
         {/* ModeToggle positioned below navbar */}
-        <div className="fixed top-20 right-4 z-40">
+        <div className="fixed top-20 left-4 z-40">
           <ModeToggle />
         </div>
 

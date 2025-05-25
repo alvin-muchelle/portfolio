@@ -17,7 +17,13 @@ const projects: Project[] = [
     tech: ["React", "Typescript", "Express.js", "Node.js", "MongoDB"],
     href: "https://chanjo-chonjo.netlify.app/",
   },
-  
+  {
+    title: "Weather App",
+    description:
+      "An app that displays today's weather and a forecast for the next three days",
+    tech: ["Next.js", "Typescript", "OpenWeather API"],
+    href: "https://mtabiri.vercel.app/",
+  },
 ];
 
 export const Projects: React.FC = () => {

@@ -35,7 +35,7 @@ export const Home: React.FC = () => {
           {isTypingComplete && (
             <>
               <p className="text-muted-foreground text-lg mb-8 max-w-lg mx-auto animate-fade-in opacity-0">
-                I’m a web app developer who loves crafting clean, scalable web
+                I am a software developer who loves designing clean, scalable
                 applications. My goal is to build solutions that offer both
                 exceptional performance and a delightful user experience.
               </p>
