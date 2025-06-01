@@ -1,20 +1,31 @@
-import React from "react";
+import React, { type JSX } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import { GradientText } from "../GradientText";
 
 interface Project {
   title: string;
-  description: string;
+  description: string | JSX.Element;
   tech: string[];
   href: string;
 }
 
 const projects: Project[] = [
-  {
+ {
     title: "Vaccination tracker - AWS Hosted",
-    description:
-      `An app that allows mothers to track their new born children's vaccination regimens.
-      Fully hosted on AWS in a serverless architecture. `,
+    description: (
+      <>
+        An app that allows mothers to track their new born children's vaccination regimens.
+        Fully hosted on AWS in a{" "}
+        <a
+          href="https://chanjo-sam-deploy-bucket-2.s3.us-east-1.amazonaws.com/Chanjo+Chonjo+Architecture.png"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-500 underline hover:text-blue-700"
+        >
+          serverless architecture
+        </a>.
+      </>
+    ),
     tech: ["Next.js", "Typescript", "AWS Amplify", "Express.js", "AWS Lambda", "AWS DynamoDB"],
     href: "https://master.d1s5f4b1nmbk2r.amplifyapp.com/",
   },
