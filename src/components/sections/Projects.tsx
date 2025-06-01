@@ -17,7 +17,7 @@ const projects: Project[] = [
         An app that allows mothers to track their new born children's vaccination regimens.
         Fully hosted on AWS in a{" "}
         <a
-          href="https://chanjo-sam-deploy-bucket-2.s3.us-east-1.amazonaws.com/Chanjo+Chonjo+Architecture.png"
+          href="https://github.com/alvin-muchelle/chanjo-backend/blob/master/README.md#architecture"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 underline hover:text-blue-700"
