@@ -11,9 +11,17 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Vaccination tracker",
+    title: "Vaccination tracker - AWS Hosted",
     description:
-      "An app that allows mothers to track their new born children's vaccination regimens.",
+      `An app that allows mothers to track their new born children's vaccination regimens.
+      Fully hosted on AWS in a serverless architecture. `,
+    tech: ["Next.js", "Typescript", "AWS Amplify", "Express.js", "AWS Lambda", "AWS DynamoDB"],
+    href: "https://master.d1s5f4b1nmbk2r.amplifyapp.com/",
+  },
+  {
+    title: "Vaccination tracker - MERN Stack",
+    description:
+      "Uses Netlify and Railway for frontend and backend hosting respectively.",
     tech: ["React", "Typescript", "Express.js", "Node.js", "MongoDB"],
     href: "https://chanjo-chonjo.netlify.app/",
   },
