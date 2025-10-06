@@ -61,7 +61,7 @@ export const About: React.FC = () => {
               <div className="space-y-6 text-muted-foreground">
                 <div className="space-y-1">
                   <div className="text-foreground text-lg font-semibold">
-                    Software Engineer
+                    ARED Group PLC - Software Engineer
                   </div>
                   <div className="text-base text-muted-foreground font-bold">
                     June 2025 - Present
@@ -71,8 +71,9 @@ export const About: React.FC = () => {
                     <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed">
                       <li>
                         <span className="font-bold">Integrating external APIs and AI services into backend workflows</span>, demonstrated by a production-grade Flask chatbot service that connects a generative AI model (Gemini) and Slack .
-                        The service implements secure request verification, structured system prompts, robust logging, and stateful escalation flows.
+                        <br />
                         It also handles retries/timeouts, and applies idempotency and deduplication when interacting with remote APIs.
+                        <br />
                         I focus on reliability, security (HMAC verification, env-based secrets, least-privilege tokens), cost-aware polling patterns, and clear operational observability — all of which enable safe, scalable AI + API back-end integrations.
                       </li>
                       <li>
