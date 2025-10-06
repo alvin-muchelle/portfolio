@@ -3,8 +3,8 @@ import { RevealOnScroll } from "../RevealOnScroll";
 import { GradientText } from "../GradientText"; 
 
 export const About: React.FC = () => {
-  const frontendSkills: string[] = ["React.js", "Next.js", "TypeScript", "TailwindCSS"];
-  const backendSkills: string[] = ["Node.js", "Express.js", "Python", "AWS", "PostreSQL", "MongoDB"];
+  const frontendSkills: string[] = ["React.js", "Next.js", "Vue.js", "TypeScript", "TailwindCSS", "Flutter", "Dart"];
+  const backendSkills: string[] = ["Node.js", "Express.js", "Python", "AWS", "PostreSQL", "MongoDB", "Java", "Spring Boot", "Firebase"];
 
   return (
     <section
@@ -77,22 +77,22 @@ export const About: React.FC = () => {
               <div className="space-y-6 text-muted-foreground">
                 <div className="space-y-1">
                   <div className="text-foreground text-lg font-semibold">
-                    Operations Assistant - NCBA Group
+                    Software Engineer
                   </div>
                   <div className="text-base text-muted-foreground font-bold">
-                    Oct 2023 - Feb 2024
+                    June 2025 - Present
                   </div>
                   <div>
                     <h3>Key Responsibilities</h3>
                     <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed">
                       <li>
-                        Performed exploratory testing on new digital banking products to ensure alignment with bank business requirements.
+                        Integrating external APIs and AI services into backend workflows, demonstrated by a production-style Flask chatbot service that connects a generative AI model (Gemini) and Slack (webhooks, chat.postMessage, conversations.replies, users.info). 
+                        The service implements secure request verification, structured system prompts, robust logging, and stateful escalation flows. 
+                        It also handles retries/timeouts, and applies idempotency and deduplication when interacting with remote APIs. 
+                        I focus on reliability, security (HMAC verification, env-based secrets, least-privilege tokens), cost-aware polling patterns, and clear operational observability — all of which enable safe, scalable AI + API back-end integrations.
                       </li>
                       <li>
-                        Conducted comprehensive data analysis on NCBA SASA customers to develop business insights on how customers borrow money.
-                      </li>
-                      <li>
-                        Solved customer issues raised via email concerning issues they were encountering during lending from the NCBA SASA platform.
+                        Maintaining web applications using React.js and Vue.js, ensuring responsive design and optimal performance across devices.
                       </li>
                     </ul>
                   </div>

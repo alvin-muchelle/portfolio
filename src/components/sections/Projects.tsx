@@ -10,7 +10,7 @@ interface Project {
 }
 
 const projects: Project[] = [
- {
+  {
     title: "Vaccination tracker - AWS Hosted",
     description: (
       <>
@@ -30,11 +30,11 @@ const projects: Project[] = [
     href: "https://master.d1s5f4b1nmbk2r.amplifyapp.com/",
   },
   {
-    title: "Weather App",
+    title: "Mobile E-commerce App (Flutter + Spring Boot)",
     description:
-      "An app that displays today's weather and a forecast for the next three days",
-    tech: ["Next.js", "Typescript", "OpenWeather API"],
-    href: "https://mtabiri.vercel.app/",
+      "Designed and built a cross-platform mobile e-commerce client using Dart & Flutter for the UI with a Java Spring Boot backend. Implemented core shopping flows (product browsing, cart, checkout), user authentication, and media handling; produced a signed Android APK release for distribution.",
+    tech: ["Dart", "Flutter", "Java", "Spring Boot", "Firebase Firestore", "Firebase Storage", "Firebase Auth"],
+    href: "https://github.com/alvin-muchelle/flutter-ecommerce-mobile-app/releases/tag/release",
   },
 ];
 
@@ -53,7 +53,7 @@ export const Projects: React.FC = () => {
                 className="p-6 rounded-xl border border-border hover:-translate-y-1 hover:border-primary/30 hover:shadow-primary-glow transition-all duration-200"
               >
                 <h3 className="text-xl font-bold mb-2">
-                 <GradientText>{title}</GradientText>
+                  <GradientText>{title}</GradientText>
                 </h3>
                 <p className="text-muted-foreground mb-4">{description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -67,8 +67,8 @@ export const Projects: React.FC = () => {
                   ))}
                 </div>
                 <div className="flex justify-between items-center">
-                  <a 
-                    href={href} 
+                  <a
+                    href={href}
                     className="bg-primary text-primary-foreground py-3 px-6 rounded font-medium transition-all 
                             hover:scale-105 hover:shadow-primary-glow focus:ring-2 focus:ring-ring"
                   >
