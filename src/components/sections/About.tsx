@@ -4,7 +4,7 @@ import { GradientText } from "../GradientText";
 
 export const About: React.FC = () => {
   const frontendSkills: string[] = ["React.js", "Next.js", "Vue.js", "TypeScript", "JavaScript", "TailwindCSS", "Flutter", "Dart"];
-  const backendSkills: string[] = ["Node.js", "Express.js", "Python", "AWS", "PostreSQL", "MongoDB", "Java", "Spring Boot", "Firebase"];
+  const backendSkills: string[] = ["Node.js", "Express.js", "Python", "Flask", "Django", "AWS", "PostreSQL", "MongoDB", "Java", "Spring Boot", "Firebase"];
 
   return (
     <section
@@ -70,10 +70,13 @@ export const About: React.FC = () => {
                     <h3 className="sr-only">Key Responsibilities</h3>
                     <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed">
                       <li>
-                        Integrating external APIs and AI services into backend workflows, demonstrated by a production-style Flask chatbot service that connects a generative AI model (Gemini) and Slack (webhooks, chat.postMessage, conversations.replies, users.info). The service implements secure request verification, structured system prompts, robust logging, and stateful escalation flows. It also handles retries/timeouts, and applies idempotency and deduplication when interacting with remote APIs. I focus on reliability, security (HMAC verification, env-based secrets, least-privilege tokens), cost-aware polling patterns, and clear operational observability — all of which enable safe, scalable AI + API back-end integrations.
+                        <span className="font-bold">Integrating external APIs and AI services into backend workflows</span>, demonstrated by a production-grade Flask chatbot service that connects a generative AI model (Gemini) and Slack .
+                        The service implements secure request verification, structured system prompts, robust logging, and stateful escalation flows.
+                        It also handles retries/timeouts, and applies idempotency and deduplication when interacting with remote APIs.
+                        I focus on reliability, security (HMAC verification, env-based secrets, least-privilege tokens), cost-aware polling patterns, and clear operational observability — all of which enable safe, scalable AI + API back-end integrations.
                       </li>
                       <li>
-                        Maintaining web applications using React.js and Vue.js, ensuring responsive design and optimal performance across devices.
+                        <span className="font-bold">Maintaining web applications built using React.js and Vue.js</span> ensuring responsive design and optimal performance across devices.
                       </li>
                     </ul>
                   </div>
