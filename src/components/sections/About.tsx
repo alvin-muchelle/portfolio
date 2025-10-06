@@ -1,9 +1,9 @@
 import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
-import { GradientText } from "../GradientText"; 
+import { GradientText } from "../GradientText";
 
 export const About: React.FC = () => {
-  const frontendSkills: string[] = ["React.js", "Next.js", "Vue.js", "TypeScript", "TailwindCSS", "Flutter", "Dart"];
+  const frontendSkills: string[] = ["React.js", "Next.js", "Vue.js", "TypeScript", "JavaScript", "TailwindCSS", "Flutter", "Dart"];
   const backendSkills: string[] = ["Node.js", "Express.js", "Python", "AWS", "PostreSQL", "MongoDB", "Java", "Spring Boot", "Firebase"];
 
   return (
@@ -53,24 +53,8 @@ export const About: React.FC = () => {
             </div>
           </div>
 
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 items-start">
-            <div className="p-6 rounded-xl border border-border hover:-translate-y-1 transition-all duration-200">
-              <h3 className="text-xl font-bold mb-6">
-                <GradientText>Education</GradientText>
-              </h3>
-              <div className="text-muted-foreground">
-                <div className="space-y-2">
-                  <div className="text-foreground text-lg font-semibold">
-                    B.Sc Electrical and Electronics Engineering - 2023
-                  </div>
-                  <div className="text-base">
-                    Jomo Kenyatta University of Agriculture and Technology
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-6 rounded-xl border border-border hover:-translate-y-1 transition-all duration-200">
+          <div className="grid grid-cols-1 gap-6 mt-8 items-start">
+            <div className="p-6 rounded-xl border border-border hover:-translate-y-1 transition-all duration-200 order-1">
               <h3 className="text-xl font-bold mb-6">
                 <GradientText>Experience</GradientText>
               </h3>
@@ -83,18 +67,32 @@ export const About: React.FC = () => {
                     June 2025 - Present
                   </div>
                   <div>
-                    <h3>Key Responsibilities</h3>
+                    <h3 className="sr-only">Key Responsibilities</h3>
                     <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed">
                       <li>
-                        Integrating external APIs and AI services into backend workflows, demonstrated by a production-style Flask chatbot service that connects a generative AI model (Gemini) and Slack (webhooks, chat.postMessage, conversations.replies, users.info). 
-                        The service implements secure request verification, structured system prompts, robust logging, and stateful escalation flows. 
-                        It also handles retries/timeouts, and applies idempotency and deduplication when interacting with remote APIs. 
-                        I focus on reliability, security (HMAC verification, env-based secrets, least-privilege tokens), cost-aware polling patterns, and clear operational observability — all of which enable safe, scalable AI + API back-end integrations.
+                        Integrating external APIs and AI services into backend workflows, demonstrated by a production-style Flask chatbot service that connects a generative AI model (Gemini) and Slack (webhooks, chat.postMessage, conversations.replies, users.info). The service implements secure request verification, structured system prompts, robust logging, and stateful escalation flows. It also handles retries/timeouts, and applies idempotency and deduplication when interacting with remote APIs. I focus on reliability, security (HMAC verification, env-based secrets, least-privilege tokens), cost-aware polling patterns, and clear operational observability — all of which enable safe, scalable AI + API back-end integrations.
                       </li>
                       <li>
                         Maintaining web applications using React.js and Vue.js, ensuring responsive design and optimal performance across devices.
                       </li>
                     </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="p-6 rounded-xl border border-border hover:-translate-y-1 transition-all duration-200 order-2">
+              <h3 className="text-xl font-bold mb-6">
+                <GradientText>Education</GradientText>
+              </h3>
+              <div className="text-muted-foreground">
+                <div className="space-y-2">
+                  <div className="text-foreground text-lg font-semibold">
+                    B.Sc Electrical and Electronics Engineering - 2023
+                  </div>
+                  <div className="text-base">
+                    Jomo Kenyatta University of Agriculture and Technology
                   </div>
                 </div>
               </div>
